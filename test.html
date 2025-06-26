@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<p id="place"></p>
+<script>
+    alert("Wer das liest ist doof!")
+    var all = document.getElementsByTagName("*");
+
+    for (var i=0, max=all.length; i < max; i++) {
+        // Do something with the element here
+        document.getElementById("place").innerHTML += all[i] + "   id: " + all[i].id + "<br>";
+    }
+
+    let coo = document.cookie
+    document.getElementById("place").innerHTML += "Cookie: " + coo;
+</script>
+</body>
+</html>
