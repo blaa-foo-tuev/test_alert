@@ -17,6 +17,9 @@
     
     var cookies = document.cookie
     document.getElementById("cook").innerHTML += cookies;
+    if (cookies === null){
+        documente.getElementById("cook").innerHTML += "No cookies found!";
+    }
 </script>
 </body>
 </html>
